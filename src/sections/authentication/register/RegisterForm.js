@@ -3,12 +3,54 @@ import { useState } from 'react';
 import { useFormik, Form, FormikProvider } from 'formik';
 import { useNavigate } from 'react-router-dom';
 // material
-import { Stack, TextField, IconButton, InputAdornment } from '@mui/material';
+import { Stack, TextField, IconButton, InputAdornment, Select, MenuItem } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 // component
 import Iconify from '../../../components/Iconify';
 
 // ----------------------------------------------------------------------
+const ROLES_SELECT = [
+  {
+    id: 1,
+    value: 'Screenwriter'
+  },
+  {
+    id: 2,
+    value: 'Hr Manager'
+  },
+  {
+    id: 3,
+    value: 'UI Designer'
+  },
+  {
+    id: 4,
+    value: 'UX Designer'
+  },
+  {
+    id: 5,
+    value: 'UI/UX Designer'
+  },
+  {
+    id: 6,
+    value: 'Project Manager'
+  },
+  {
+    id: 7,
+    value: 'Front End Developer'
+  },
+  {
+    id: 8,
+    value: 'Backend Developer'
+  },
+  {
+    id: 9,
+    value: 'Full Stack Designer'
+  },
+  {
+    id: 10,
+    value: 'Full Stack Developer'
+  }
+];
 
 export default function RegisterForm() {
   const navigate = useNavigate();
@@ -60,6 +102,14 @@ export default function RegisterForm() {
               helperText={touched.lastName && errors.lastName}
             />
           </Stack>
+
+          <Select fullWidth defaultValue={ROLES_SELECT[0].value}>
+            {ROLES_SELECT.map((role) => (
+              <MenuItem key={role.id} value={role.value}>
+                {role.value}
+              </MenuItem>
+            ))}
+          </Select>
 
           <TextField
             fullWidth
