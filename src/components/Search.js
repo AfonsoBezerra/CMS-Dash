@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 // material
 import { styled } from '@mui/material/styles';
-import { TextField, InputAdornment, Toolbar, OutlinedInput } from '@mui/material';
+import { InputAdornment, Toolbar, OutlinedInput } from '@mui/material';
 // component
 import Iconify from './Iconify';
 

@@ -1,6 +1,6 @@
 // material
-import { Box, Grid, Container, Typography, Card } from '@mui/material';
-import { BlogPostCard } from '../sections/@dashboard/blog';
+import { Box, Grid, Container, Typography } from '@mui/material';
+// import { BlogPostCard } from '../sections/@dashboard/blog';
 // components
 import Page from '../components/Page';
 import {
@@ -17,7 +17,7 @@ import {
   AppSales
 } from '../sections/@dashboard/app';
 //
-import POSTS from '../_mocks_/blog';
+// import POSTS from '../_mocks_/blog';
 
 // ----------------------------------------------------------------------
 

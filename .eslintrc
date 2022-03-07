@@ -55,12 +55,7 @@
     "import/no-extraneous-dependencies": 0,
     "react/jsx-key": 1,
     "react-hooks/rules-of-hooks": 2,
-    "no-unused-vars": [
-      1,
-      {
-        "ignoreRestSiblings": false
-      }
-    ],
+    "no-unused-vars": "off",
     "prettier/prettier": [
       2,
       {
