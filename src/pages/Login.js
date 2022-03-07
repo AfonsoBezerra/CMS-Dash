@@ -29,12 +29,14 @@ const SectionStyle = styled(Card)(({ theme }) => ({
 const ContentStyle = styled('div')(({ theme }) => ({
   maxWidth: 480,
   margin: 'auto',
-  marginTop: '2rem',
   display: 'flex',
   minHeight: '100vh',
   flexDirection: 'column',
   justifyContent: 'center',
-  padding: theme.spacing(12, 0)
+  padding: theme.spacing(12, 0),
+  [theme.breakpoints.down('md')]: {
+    marginTop: '2rem'
+  }
 }));
 
 // ----------------------------------------------------------------------
