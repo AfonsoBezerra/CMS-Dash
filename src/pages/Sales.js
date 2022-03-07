@@ -240,9 +240,7 @@ export default function Sale() {
   };
 
   const handleSelectAllClick = (event) => {
-    console.log('aqui');
     if (event.target.checked) {
-      console.log('aqui2');
       const newSelecteds = filteredTimeline
         .filter((row) =>
           stats === '' ? row.status === 'Sale' || row.status === 'Canceled' : row.status === stats
@@ -251,7 +249,6 @@ export default function Sale() {
 
       setSelected(newSelecteds);
     } else {
-      console.log('aqui3');
       setSelected([]);
     }
   };

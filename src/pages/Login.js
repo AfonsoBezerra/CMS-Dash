@@ -29,6 +29,7 @@ const SectionStyle = styled(Card)(({ theme }) => ({
 const ContentStyle = styled('div')(({ theme }) => ({
   maxWidth: 480,
   margin: 'auto',
+  marginTop: '2rem',
   display: 'flex',
   minHeight: '100vh',
   flexDirection: 'column',
@@ -40,7 +41,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 export default function Login() {
   return (
-    <RootStyle title="Login | Minimal-UI">
+    <RootStyle title="Login | ShooesZoom">
       <AuthLayout>
         Don’t have an account? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to="/register">
@@ -74,7 +75,7 @@ export default function Login() {
             }}
           >
             Don’t have an account?&nbsp;
-            <Link variant="subtitle2" component={RouterLink} to="register" underline="hover">
+            <Link variant="subtitle2" component={RouterLink} to="/register" underline="hover">
               Get started
             </Link>
           </Typography>
